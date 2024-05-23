@@ -10,6 +10,11 @@ header {
     padding: 1em 0;
     text-align: center;
 }
+header nav {
+    background-color: #333; /* Ensure nav background matches header */
+    padding: 0.5em 0;
+}
+
 header h1 {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif; /* Change the font style */
@@ -21,14 +26,13 @@ section {
     text-align: left; /* Align text to the left in sections */
 }
 .container {
-    padding-left: 2em; /* Add padding to the left */
+    padding-left: 1em; /* Add padding to the left */
 }
 .navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
     text-align: center;
 }
 
@@ -41,10 +45,17 @@ section {
     color: white;
     text-decoration: none;
     display: inline-block;
+    padding: 14px 20px;
 }
 
 .navbar li a:hover {
+    background-color: #575757;
+    color: white;
+}
+
+.navbar li a:focus, .navbar li a:active {
     background-color: #111;
+    color: white;
 }
 
 footer {
