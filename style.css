@@ -16,7 +16,7 @@ header {
     margin-bottom: 0;
 }
 header a {
-    color: white; /* Make the links white */
+    color: white !important; /* Make the links white */
     text-decoration: underline; /* Underline the links */
 }
 
