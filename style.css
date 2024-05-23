@@ -15,17 +15,13 @@ header {
     text-align: center;
     margin-bottom: 0;
 }
-header a {
-    color: white !important; /* Make the links white */
+.header-link {
+    color: white !important; /* Make the links white and ensure the style is applied */
     text-decoration: underline; /* Underline the links */
 }
 
-header a:hover {
+.header-link:hover {
     color: #ccc; /* Change color on hover for better visibility */
-}
-
-header p {
-    margin: 0.5em 0; /* Adjust margin to reduce gaps */
 }
 
 header nav {
