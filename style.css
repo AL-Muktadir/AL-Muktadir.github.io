@@ -7,16 +7,15 @@ body, html {
 header {
     background-color: #333;
     color: #fff;
-    padding: 0.5em 0;
+    padding: 0.5em 0; /* Reduced padding */
     text-align: left;
-    margin-bottom: 0;
-    position: relative;
+    margin-bottom: 0; /* Remove bottom margin */
 }
 
 header nav {
-    background-color: #333;
-    padding: 0;
-    margin: 0;
+    background-color: #333; /* Ensure nav background matches header */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
 }
 
 .navbar {
@@ -30,7 +29,7 @@ header nav {
 .navbar li {
     display: inline;
     margin: 0;
-    padding: 0.5em 1em;
+    padding: 0.5em 1em; /* Adjusted padding */
 }
 
 .navbar li a {
@@ -49,27 +48,14 @@ header nav {
     color: white;
 }
 
-.hamburger-menu {
-    display: none; /* Hide hamburger menu on larger screens */
-    background-color: #333;
-    color: white;
-    border: none;
-    font-size: 2em;
-    padding: 0.5em;
-    cursor: pointer;
-    position: absolute;
-    top: 0.5em;
-    right: 1em;
-}
-
 .container {
-    padding-left: 2em;
+    padding-left: 2em; /* Add padding to the left */
 }
 
 section {
-    margin: 1em 0;
-    padding: 0 1em;
-    text-align: left;
+    margin: 1em 0; /* Reduced top and bottom margin */
+    padding: 0 1em; /* Adjusted padding */
+    text-align: left; /* Align text to the left in sections */
 }
 
 footer {
@@ -89,36 +75,47 @@ a:hover {
 }
 
 .header-link {
-    color: white !important;
-    text-decoration: underline;
+    color: white !important; /* Make the links white and ensure the style is applied */
+    text-decoration: underline; /* Underline the links */
 }
 
 .header-link:hover {
-    color: #ccc;
+    color: #ccc; /* Change color on hover for better visibility */
 }
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
-    .hamburger-menu {
-        display: block; /* Show hamburger menu on smaller screens */
+    header {
+        text-align: center;
     }
 
     .navbar {
-        display: none; /* Hide navbar by default on smaller screens */
-    }
-
-    .navbar ul {
+        display: flex;
         flex-direction: column;
-        text-align: left;
     }
 
     .navbar li {
         display: block;
-        padding: 1em;
+        padding: 1em 0;
     }
 
     .container {
         padding-left: 1em;
         padding-right: 1em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 0.5em 0.5em;
+    }
+
+    .navbar li {
+        padding: 0.5em 0;
+    }
+
+    .container {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
     }
 }
