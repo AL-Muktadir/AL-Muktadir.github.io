@@ -1,6 +1,6 @@
 body {
-    font-family: Source Sans Pro, sans-serif;
-    margin: 10;
+    font-family: Arial, sans-serif;
+    margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
@@ -8,37 +8,25 @@ header {
     background-color: #333;
     color: #fff;
     padding: 1em 0;
+    text-align: left; /* Align text to the left in the header */
 }
 header h1 {
     margin: 0;
-    font-family: Source Sans Pro, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif; /* Change the font style */
 }
 section {
     margin: 2em 0;
     padding: 0 1em;
-    text-align: left;
-}
-table {
-    margin: 0 auto;
-    border-collapse: collapse;
-    width: 90%;
-    text-align: left;
-}
-th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-}
-th {
-    background-color: #333;
-    color: white;
+    text-align: left; /* Align text to the left in sections */
 }
 footer {
     background-color: #333;
     color: white;
     padding: 1em 0;
-    
+    position: fixed;
     width: 100%;
     bottom: 0;
+    text-align: center;
 }
 a {
     color: #007bff;
