@@ -15,6 +15,19 @@ header {
     text-align: center;
     margin-bottom: 0;
 }
+header a {
+    color: white; /* Make the links white */
+    text-decoration: underline; /* Underline the links */
+}
+
+header a:hover {
+    color: #ccc; /* Change color on hover for better visibility */
+}
+
+header p {
+    margin: 0.5em 0; /* Adjust margin to reduce gaps */
+}
+
 header nav {
     background-color: #333; /* Ensure nav background matches header */
     margin-top: 0; 
