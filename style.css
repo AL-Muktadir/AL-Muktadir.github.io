@@ -23,6 +23,30 @@ section {
 .container {
     padding-left: 2em; /* Add padding to the left */
 }
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    text-align: center;
+}
+
+.navbar li {
+    display: inline;
+    padding: 14px 20px;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.navbar li a:hover {
+    background-color: #111;
+}
+
 footer {
     background-color: #333;
     color: white;
