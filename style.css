@@ -12,7 +12,7 @@ header {
 }
 header nav {
     background-color: #333; /* Ensure nav background matches header */
-    padding: 0.5em 0;
+    padding: 0 0;
 }
 
 header h1 {
@@ -21,7 +21,7 @@ header h1 {
     text-align: center;
 }
 section {
-    margin: 2em 0 2em 2em; /* Add margin to the left */
+    margin: 2em 0 0 2em; /* Add margin to the left */
     padding: 0 1em;
     text-align: left; /* Align text to the left in sections */
 }
