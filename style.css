@@ -16,9 +16,12 @@ header h1 {
     text-align: center;
 }
 section {
-    margin: 2em 0;
-    padding: 0 1em 0 20em;
+    margin: 2em 0 2em 2em; /* Add margin to the left */
+    padding: 0 1em;
     text-align: left; /* Align text to the left in sections */
+}
+.container {
+    padding-left: 2em; /* Add padding to the left */
 }
 footer {
     background-color: #333;
