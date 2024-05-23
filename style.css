@@ -1,23 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
 body, html {
     margin: 0;
     padding: 0;
-    font-family: 'Source Sans Pro', sans-serif;
 }
-
 header {
     background-color: #333;
     color: #fff;
-    padding: 0.5em 0; /* Reduced padding */
+    padding: 0.1em 0;
     text-align: center;
-    margin-bottom: 0; /* Remove bottom margin */
+    margin-bottom: 0;
+}
+.header-link {
+    color: white !important; /* Make the links white and ensure the style is applied */
+    text-decoration: underline; /* Underline the links */
+}
+
+.header-link:hover {
+    color: #ccc; /* Change color on hover for better visibility */
 }
 
 header nav {
     background-color: #333; /* Ensure nav background matches header */
+    margin-top: 0; 
     padding: 0; /* Remove padding */
     margin: 0; /* Remove margin */
 }
 
+header h1 {
+    margin: 0;
+    /* font-family: 'Source Sans Pro', sans-serif;  */
+    text-align: center;
+}
+section {
+    margin: 1em 0; /* Reduced top and bottom margin */
+    padding: 0 1em 0 2em; /* Add padding to the left */
+    text-align: left; /* Align text to the left in sections */
+}
+.container {
+    padding-left: 2em; /* Add padding to the left */
+}
 .navbar {
     list-style-type: none;
     margin: 0;
@@ -28,14 +54,14 @@ header nav {
 
 .navbar li {
     display: inline;
-    margin: 0;
-    padding: 0.5em 1em; /* Adjusted padding */
+    padding: 0.5em 1em;
 }
 
 .navbar li a {
     color: white;
     text-decoration: none;
     display: inline-block;
+    padding: 14px 20px;
 }
 
 .navbar li a:hover {
@@ -46,28 +72,6 @@ header nav {
 .navbar li a:focus, .navbar li a:active {
     background-color: #111;
     color: white;
-}
-.hamburger-menu {
-    display: none; /* Hide hamburger menu on larger screens */
-    background-color: #333;
-    color: white;
-    border: none;
-    font-size: 2em;
-    padding: 0.5em;
-    cursor: pointer;
-    position: absolute;
-    top: 0.5em;
-    right: 1em;
-}
-
-.container {
-    padding-left: 2em; /* Add padding to the left */
-}
-
-section {
-    margin: 1em 0; /* Reduced top and bottom margin */
-    padding: 0 1em; /* Adjusted padding */
-    text-align: left; /* Align text to the left in sections */
 }
 
 footer {
@@ -85,49 +89,7 @@ a {
 a:hover {
     text-decoration: underline;
 }
-
-.header-link {
-    color: white !important; /* Make the links white and ensure the style is applied */
-    text-decoration: underline; /* Underline the links */
-}
-
-.header-link:hover {
-    color: #ccc; /* Change color on hover for better visibility */
-}
-
-/* Responsive Styles */
-@media screen and (max-width: 768px) {
-    header {
-        text-align: center;
-    }
-
-    .navbar {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .navbar li {
-        display: block;
-        padding: 1em 0;
-    }
-
-    .container {
-        padding-left: 1em;
-        padding-right: 1em;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    header {
-        padding: 0.5em 0.5em;
-    }
-
-    .navbar li {
-        padding: 0.5em 0;
-    }
-
-    .container {
-        padding-left: 0.5em;
-        padding-right: 0.5em;
-    }
+ul {
+    list-style-type: none;
+    padding: 0;
 }
