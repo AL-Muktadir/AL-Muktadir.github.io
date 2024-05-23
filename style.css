@@ -12,10 +12,12 @@ header {
 }
 header h1 {
     margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 section {
     margin: 2em 0;
     padding: 0 1em;
+    text-align: left;
 }
 table {
     margin: 0 auto;
