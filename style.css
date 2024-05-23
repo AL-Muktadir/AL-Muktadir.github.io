@@ -47,6 +47,18 @@ header nav {
     background-color: #111;
     color: white;
 }
+.hamburger-menu {
+    display: none; /* Hide hamburger menu on larger screens */
+    background-color: #333;
+    color: white;
+    border: none;
+    font-size: 2em;
+    padding: 0.5em;
+    cursor: pointer;
+    position: absolute;
+    top: 0.5em;
+    right: 1em;
+}
 
 .container {
     padding-left: 2em; /* Add padding to the left */
