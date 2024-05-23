@@ -8,11 +8,12 @@ header {
     background-color: #333;
     color: #fff;
     padding: 1em 0;
-    text-align: center; /* Align text to the left in the header */
+    text-align: center;
 }
 header h1 {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif; /* Change the font style */
+    text-align: center;
 }
 section {
     margin: 2em 0;
