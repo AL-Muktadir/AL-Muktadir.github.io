@@ -25,18 +25,19 @@
             <a href="https://www.researchgate.net/profile/Al-Muktadir-Munam" class="link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Research Gate</a> |
             <a href="https://vu.edu.bd/academics/departments/computer-science-and-engineering/faculty-members/02437/al-muktadir-munam" class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Faculty Website</a>
         </p> 
-    <nav>
-        <ul class="navbar">
-            <li><a href="#career-summary">Career Summary</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#language">Language</a></li>
-            <li><a href="#trainings">Trainings</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#awards">Awards</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-        </ul>
-    </nav>
+    <button class="hamburger-menu" onclick="toggleNav()">☰</button>
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a href="#career-summary">Career Summary</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#language">Language</a></li>
+                <li><a href="#trainings">Trainings</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#awards">Awards</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+            </ul>
+        </nav>
     </header>
  
     <section id="career-summary">
@@ -271,5 +272,15 @@
     <footer>
         <p>&copy; 2024 Al Muktadir Munam. All rights reserved.</p>
     </footer>
+    <script>
+        function toggleNav() {
+            var nav = document.getElementById("navbar");
+            if (nav.style.display === "block") {
+                nav.style.display = "none";
+            } else {
+                nav.style.display = "block";
+            }
+        }
+    </script>
 </body>
 </html>
